@@ -2,49 +2,50 @@
 def soma():
     n1 = int(input('Digite um número: '))
     n2 = int(input('Digite um número: '))
-    r = n1 + n2
-    print(r)
+    print(n1 + n2)
 
 
 def sub():
     n1 = int(input('Digite um número: '))
     n2 = int(input('Digite um número: '))
-    r = n1 - n2
-    print(r)
+    print(n1 - n2)
 
 
 def mult():
     n1 = int(input('Digite um número: '))
     n2 = int(input('Digite um número: '))
-    r = n1 * n2
-    print(r)
+    print(n1 * n2)
 
 
 def div():
     n1 = int(input('Digite um número: '))
     n2 = int(input('Digite um número: '))
-    r = n1 / n2
-    print(r)
+    print(n1 / n2)
 
 
 def expo():
     n1 = int(input('Digite um número: '))
     n2 = int(input('Digite um número: '))
-    r = n1 ** n2
-    print(r)
+    print(n1 ** n2)
+
+
+def rad():
+    n1 = int(input('Digite um número: '))
+    print(n1**(1/2))
 
 
 while True:
     print()
     print('Calculadora-Multi-Funções\n')
     print()
-    print('Soma - ( 1 ) \n')
-    print('Subtração - ( 2 )\n')
-    print('Multiplicação - ( 3 )\n')
-    print('Divisão - ( 4 )\n')
-    print('Exponenciação - ( 5 )\n')
+    print('Soma - ( 1 )')
+    print('Subtração - ( 2 )')
+    print('Multiplicação - ( 3 )')
+    print('Divisão - ( 4 )')
+    print('Exponenciação - ( 5 )')
+    print('Radiciação !Quad! - ( 6 )')
 
-    escolha = int(input(''))
+    escolha = int(input(': '))
     match escolha:
         case 1:
             soma()
@@ -60,6 +61,9 @@ while True:
             break
         case 5:
             expo()
+            break
+        case 6:
+            rad()
             break
         case _:
             print('Número inválido\n')
