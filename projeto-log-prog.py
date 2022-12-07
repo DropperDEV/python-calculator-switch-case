@@ -166,7 +166,7 @@ def carros():
     n_acidentes = []
     acidentes_1999 = []
 
-    for i in range(2):
+    for i in range(5):
         print("\nCidade número ", i + 1)
         codigo_cidade = int(input("Digite o código da cidade: "))
         while codigo_cidade in cod_cidades:
@@ -210,7 +210,7 @@ while True:
     print('Dados Alunos - ( 6 )')
     print('Dados veiculares - ( 7 )\n')
 
-    escolha = int(input("Escolha um número: \n"))
+    escolha = int(input("Escolha um número: "))
     match escolha:
         case 1:
             calc()
